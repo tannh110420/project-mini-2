@@ -1,0 +1,38 @@
+.ul1 {
+    list-style-type: none;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+.ul1 li{
+    padding: 5px;
+    border-bottom: 2px solid #ccc;
+}
+.ul1 li:hover{
+    background-color: orange;
+}
+.ul1 li:last-child{
+    border-bottom: none;
+}
+.ul2 li{
+    list-style-type: none ;
+    background-color: #ccc;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    font-size: 20px;
+}
+.ul2 li:hover{
+    background-color: orange;
+}
+.ul2{
+    padding-left: 0;
+    margin-top: 0;
+    
+}

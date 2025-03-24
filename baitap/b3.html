@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập buổi 3</title>
+</head>
+<body>
+    <h1>Câu 1: Bài tập về Iframe</h1>
+    <p><b>Yêu cầu:</b> Vào gg map, tìm 1 địa điểm yêu thích và nhúng iframe của gg map vào website</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1555646947104!2d106.68567991124618!3d10.799394858723982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529105ee4e335%3A0xcadaf6ccf7516ba1!2sSAZO!5e0!3m2!1svi!2s!4v1738851423785!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h1>Câu 2: Bài tập về form</h1>
+    <p><b>Yêu cầu:</b> Tạo form <b>đăng ký</b> như form dưới. Phải có thẻ form bọc ngoài. Khi click vào thẻ label thì phải focus vào ô input tương ứng label đó. Các ô input yêu cầu nhập nội dung mới cho đăng ký</p>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank" autocomplete="on">
+        <label for="hoten">Họ tên: </label>
+        <br>
+        <input type="text" id="hoten" name="ho_ten" placeholder="Ví dụ: Tân bủh" required>
+        <br>
+        <label for="Email">Email: </label>
+        <br>
+        <input type="email" name="email_" id="Email" placeholder="tansenpai@gmail.com" required>
+        <br>
+        <label for="mat_khau">Mật khẩu</label>
+        <br>
+        <input type="password" id="mat_khau" name="matkhau" required>
+        <br>
+        <input type="submit" value="Gửi">
+
+    </form>
+    <p><b>Yêu cầu:</b> Tạo form <b>tìm kiếm</b> như dưới đây (phải có thẻ form bọc bên ngoài. Phải nhập nội dung mới cho bấm tìm kiếm)</p>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+        <input type="text" name="tim_kiem" placeholder="Nhập nội dung tìm kiếm..." required>
+        <input type="submit" value="Tìm kiếm">
+    </form>
+    <h1><b>Câu 3: Bài tập để ôn lại kiến thức về form</b></h1>
+    <p><b>Yêu cầu:</b> Vẽ lại các thẻ dưới đây:</p>
+    <p><b>- Thẻ input:</b></p>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+        <label for="Name">Kiểu text:</label>
+        <br>
+        <input type="text" name="fullname" id="Name" placeholder="Nhập họ tên..." required>
+        <br>
+        <br>
+        <label for="EMAIL">Kiểu email:</label>
+        <br>
+        <input type="email" id="EMAIL" name="EMail" placeholder="Nhập email" required>
+        <br>
+        <br>
+        <label for="Pass">Kiểu password:</label>
+        <br>
+        <input type="password" name="pass" id="Pass" required>
+        <br>
+        <br>
+        <label for="Number">Kiểu number:</label>
+        <br>
+        <input type="number" id="Number" name="so_luong" required min="0" max="100">
+        <br>
+        <br>
+        <label for="Date">Kiểu date:</label>
+        <br>
+        <input type="date" id="Date" name="ngaythang">
+        <br>
+        <br>
+        <label for="Time">Kiểu time:</label>
+        <br>
+        <input type="time" id="Time" name="thoigian" required>
+        <br>
+        <br>
+        <label for="File">Kiểu file:</label>
+        <br>
+        <input type="file" id="File" name="tep">
+        <br>
+        <br>
+        <label for="RAdio">Kiểu radio:</label>
+        <br>
+        <input type="radio" name="gioitinh" id="nam">
+        <label for="nam">Nam</label><br>
+        <input type="radio" name="gioitinh" id="nu">
+        <label for="nu">Nu</label><br>
+        <input type="radio" name="gioitinh" id="khac">
+        <label for="khac">Khac</label>
+        <br>
+        <br>
+        <label for="Checkbox">Kiểu radio:</label>
+        <br>
+        <input type="checkbox" name="mau" id="red">
+        <label for="red">Do</label><br>
+        <input type="checkbox" name="mau" id="black">
+        <label for="black">Den</label><br>
+        <input type="checkbox" name="mau" id="yellow">
+        <label for="yellow">Vang</label>
+        <br>
+        <br>
+        <label for="Range">Kiểu range:<br>Âm lượng min = 0 và max = 100</label>
+        <br>
+        <input type="range" name="volume" id="Range">
+        <br>
+        <br>
+        <label for="Color">Kiểu color:</label>
+        <br>
+        <input type="color" name="mausac" id="Color">
+
+    </form>
+    <p><b>- Thẻ select</b></p>
+    <form>
+        <label for="">Chọn danh mục</label>
+        <br>
+        <select name="dropdown" >
+            <option value="quan">Quần</option>
+            <option value="ao">Áo</option>
+            <option value="vay">Váy</option>
+            <option value="dep">Dép</option>
+        </select>
+    </form>
+    <p><b>- Thẻ textarea (cols = 30 và rows = 10)</b></p>
+    <form action="">
+        <textarea name="morong" rows="10" cols="30">VKL</textarea>
+    </form>
+
+</body>
+</html>

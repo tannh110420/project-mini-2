@@ -1,0 +1,117 @@
+* {
+   
+    box-sizing: border-box;
+}
+
+header{
+    background-color: orange;
+    position: sticky;
+    padding: 3px 0;
+    border-radius: 10px;
+    width: 100%;
+    color: white;
+    top: 0;
+    z-index: 999;
+}
+ul{
+    text-align: left;
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.nd{
+    background-color: #ccc;
+    width: 100%;
+    height: 130vh;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.nd1{
+    background-color: blue;
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center ;
+    line-height: 50px;
+
+    
+}
+.nd2{
+    background-color: red;
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center ;
+    position: relative;
+    left: 94.3%;
+    top: -50px;
+}
+.nd4{
+    background-color: pink;
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center ;
+    position: relative;
+    top:75%;
+    left:3%;
+    
+}
+.nd3{
+    background-color: purple;
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center ;
+    position: relative;
+    left: 94%;
+    top: 83%;
+ 
+}
+.cax{
+    background-color: blue;
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 40px;
+    color:white;
+    position: relative;
+    overflow: hidden;
+}
+.lorem::first-letter{
+    font-size: 50px;
+}
+.lorem::first-line{
+    text-transform: uppercase;
+}
+
+.cax::before{
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    background-color: #ccc;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.cax::after{
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    background-color: #ccc;
+    position: absolute;
+    right: -30px;
+    bottom: -30px;
+
+}
+.lorem{
+    position: relative;
+    z-index: 1;
+}
